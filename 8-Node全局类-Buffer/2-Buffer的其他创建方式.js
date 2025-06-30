@@ -5,11 +5,21 @@
 const buf = Buffer.alloc(8)
 // 打印创建好的 Buffer 实例
 console.log(buf);
+
+
 // 访问每个字节
 // 打印 Buffer 实例的第一个字节
-console.log(buf[0]);
+// console.log(buf[0]);
 // 打印 Buffer 实例的第二个字节
-console.log(buf[1]);
+// console.log(buf[1]);
 
-buf[3] = "hello"
-console.log(buf[3]);
+
+// 手动操作每个字节
+buf[0] = 100
+buf[1] = 0x66
+console.log(buf);
+console.log(buf.toString())
+
+buf[2] = 'm'.charCodeAt()
+console.log(buf)
+
