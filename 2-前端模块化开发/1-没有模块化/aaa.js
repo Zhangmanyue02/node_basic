@@ -1,4 +1,4 @@
-const modlueA = (function () {
+const moduleA = (function () {
     var name = "zmy"
     var age = 18
     var adderss = "南京"
@@ -6,4 +6,4 @@ const modlueA = (function () {
 })()
 
 // { name: 'zmy', age: 18, adderss: '南京' }
-console.log(modlueA);
+console.log(moduleA);

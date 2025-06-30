@@ -1,2 +1,1 @@
-const moduleA = require("./aaa")
-console.log(moduleA); //{}
+console.log("222=>>>我是bbb");
