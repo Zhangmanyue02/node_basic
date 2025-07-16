@@ -4,7 +4,7 @@ const static = require('koa-static')
 
 const app = new Koa()
 
-app.use(static('./1-问题演示'))
+app.use(static('./public'))
 
 const userRouter = new KoaRouter({ prefix: '/users' })
 userRouter.get('/list', (ctx, next) => {
@@ -19,5 +19,5 @@ app.use(userRouter.routes())
 app.use(userRouter.allowedMethods())
 
 app.listen(8000, () => {
-    console.log('koa服务器启动成功~')
+    console.log('koa 8000服务器启动成功~')
 })

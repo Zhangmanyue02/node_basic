@@ -16,5 +16,5 @@ userRouter.get("/list", (ctx, next) => {
 app.use(userRouter.routes())
 
 app.listen(9000, () => {
-    console.log("api 服务器启动成功~");
+    console.log("api 9000服务器启动成功~");
 })

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- alt + l + o 新开服务器 -->
+    <h2>hello</h2>
+</body>
+<script>
+    // 1-问题演示
+    // fetch('http://localhost:9000/api/users/list').then(async res => {
+    //     const result = await res.json()
+    //     console.log(result)
+    // })
+    // 2-方案二
+    // fetch('http://localhost:8000/users/list').then(async res => {
+    //     const result = await res.json()
+    //     console.log(result)
+    // })
+    // 2-方案三
+    fetch('http://localhost:9000/api/users/list').then(async res => {
+        const result = await res.json()
+        console.log(result)
+    })
+</script>
+
+</html>
